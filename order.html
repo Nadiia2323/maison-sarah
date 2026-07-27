@@ -15,20 +15,104 @@
 
   <body>
     <header>
-      <h1 class="brand">Maison Sarah</h1>
+      <div class="container header-bar">
+        <h1 class="brand">Maison Sarah</h1>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="order.html">Order</a>
-      </nav>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <p>
-        Our pre-order form is <strong>coming soon</strong>. Please check back
-        later.
-      </p>
+      <div class="container">
+        <form method="get">
+          <fieldset>
+            <legend>Who is picking up?</legend>
+
+            <label for="name">Name</label>
+            <input
+              class="field"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              class="field"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Pickup day</legend>
+
+            <div class="choice">
+              <input
+                type="radio"
+                id="saturday"
+                name="pickup-day"
+                value="Saturday"
+                checked
+              />
+              <label for="saturday">Saturday</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="radio"
+                id="sunday"
+                name="pickup-day"
+                value="Sunday"
+              />
+              <label for="sunday">Sunday</label>
+            </div>
+
+            <label for="time">Pickup time</label>
+
+            <select class="field" id="time" name="pickup-time">
+              <option>09:00</option>
+              <option>11:00</option>
+              <option>13:00</option>
+              <option>15:00</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your order</legend>
+
+            <div class="choice">
+              <input type="checkbox" id="bread" name="bread" />
+              <label for="bread">Sourdough Bread</label>
+            </div>
+
+            <div class="choice">
+              <input type="checkbox" id="croissant" name="croissant" />
+              <label for="croissant">Croissant</label>
+            </div>
+
+            <div class="choice">
+              <input type="checkbox" id="coffee" name="coffee" />
+              <label for="coffee">Coffee</label>
+            </div>
+
+            <label for="notes">Notes</label>
+
+            <textarea class="field" id="notes" name="notes" rows="4"></textarea>
+
+            <button type="submit">Place Pre-order</button>
+          </fieldset>
+        </form>
+      </div>
     </main>
 
     <footer>
