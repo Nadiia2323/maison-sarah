@@ -79,3 +79,77 @@ img {
   width: 100%;
   height: auto;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3rem;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 1rem;
+}
+
+th {
+  background-color: #3b2f2f;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff0dc;
+}
+fieldset {
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+legend {
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.field {
+  font-family: inherit;
+  width: 100%;
+  max-width: 40rem;
+  padding: 0.8rem;
+  border: 1px solid #999;
+  margin-bottom: 1.5rem;
+}
+
+.field:focus {
+  outline: 2px solid #8b4513;
+}
+
+.field:required {
+  border-left: 4px solid #b22222;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #8b4513;
+}
+
+button {
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6f3510;
+}
